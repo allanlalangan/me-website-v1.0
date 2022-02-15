@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  --prim-color: hsl(195, 50%, 20%);
+  --prim-color: hsl(200, 40%, 20%);
   --sec-color: hsl(190, 80%, 70%);
   --ter-color: hsl(50, 100%, 71%);
   --prim-acc: #F7FFF7;
@@ -48,7 +48,7 @@ a {
   justify-content: space-between;
 
   scroll-snap-align: start;
-
+  height: 5vh;
 }
 
 .main-nav ul{
@@ -59,7 +59,7 @@ a {
 }
 
 .hero {
-  height: 100vh;
+  height: 95vh;
 
   display: flex;
   flex-direction: column;
@@ -80,49 +80,77 @@ a {
   color: var(--ter-color);
 }
 
+.section-heading {
+  color: var(--ter-color);
+  font-size: 2.5rem;
+}
+
 .main_section {
   height: 100vh;
   margin: 0 2.5rem;
   scroll-snap-align: start;
 }
 
-.project {
+.project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   margin: 0 auto;
-  width: 75%;
-  height: 90vh;
+  width: 50vw;
+  height: calc(100% - 2.5rem);
+}
+
+.project-title {
+  color: var(--sec-color);
 }
 
 .project-preview {
   border: solid 2px var(--sec-color);
   width: 100%;
-  height: 50vh;
+  height: 50%;
 }
 
 .project-summary {
   color: var(--prim-acc);
 }
 
-main h2 {
-  height: 10vh;
+.project-card figure {
+  width: 100%;
+}
+
+.list-title {
+  color: var(--sec-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+.languages-list {
   color: var(--ter-color);
-  /* font-family: 'Raleway', sans-serif; */
-  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.language {
+  text-align: center;
+  width: 20%;
+}
+
+figcaption {
+  font-size: .75rem;
 }
 
 #skills {
-  /* height: 100%; */
-}
 
-.projects_title {
-  color: var(--sec-color);
 }
 
 .skills-list {
   color: var(--prim-acc);
+}
+
+#contact {
+  height: 50vh;
 }
 
 footer {
