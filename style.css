@@ -1,0 +1,136 @@
+:root {
+  font-size: 16px;
+  --prim-color: hsl(195, 50%, 20%);
+  --sec-color: hsl(190, 80%, 70%);
+  --ter-color: hsl(50, 100%, 71%);
+  --prim-acc: #F7FFF7;
+  --sec-acc: #7e6b8f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--prim-color);
+}
+
+main section {
+}
+
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.logo {
+}
+
+.main-header {
+  color: var(--prim-color);
+  background-color: var(--sec-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  scroll-snap-align: start;
+
+}
+
+.main-nav ul{
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 0 1.5rem;
+}
+
+.hero_title {
+  color: var(--sec-color);
+  font-style: italic;
+  font-size: 5rem;
+  letter-spacing: 1px;
+}
+
+.hero_caption {
+  color: var(--ter-color);
+}
+
+.main_section {
+  height: 100vh;
+  margin: 0 2.5rem;
+  scroll-snap-align: start;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 75%;
+  height: 90vh;
+}
+
+.project-preview {
+  border: solid 2px var(--sec-color);
+  width: 100%;
+  height: 50vh;
+}
+
+.project-summary {
+  color: var(--prim-acc);
+}
+
+main h2 {
+  height: 10vh;
+  color: var(--ter-color);
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: 2.5rem;
+}
+
+#skills {
+  /* height: 100%; */
+}
+
+.projects_title {
+  color: var(--sec-color);
+}
+
+.skills-list {
+  color: var(--prim-acc);
+}
+
+footer {
+  height: 50vh;
+  color: var(--sec-acc);
+  background-color: var(--sec-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: end;
+}
